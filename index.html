@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="邹阳的RSS订阅"/>
 <link rel="shortcut icon" href="http://www.zouyang1230.com/favicon.ico"/>
-<title>前端RSS</title>
+<title>RSS</title>
 
 <script>
 var _hmt = _hmt || [];
@@ -19,7 +19,7 @@ var oImage = new Image();oImage.src = "loading.gif";
 </script>
 
 <script type="text/javascript" src="http://www.zouyang1230.com/resource/jquery-3.2.1.min.js"></script>
-<base   target="_blank">
+<base   target="_blank" />
 <style>
     h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dd, textarea, form, input, select, body {
 	    font-family: "microsoft yahei","宋体",Arial,sans-serif;
@@ -45,12 +45,13 @@ var oImage = new Image();oImage.src = "loading.gif";
 	}
 
 	.box{width:100%;height:auto;margin-bottom:30px;}
-	.box h1{width: 100%;border: 1px slid #88bbc8;background-color: #88bbc8;
+	.box h1{width: 100%;border: 1px slid #88bbc8;background-color: #88bbc8;padding-left:1px;
 		height: 60px;line-height: 60px;margin-bottom: 10px;font-size: 20px;
 		border-radius:5px!important;-webkit-border-radius:5px!important;-moz-border-radius:5px!important;
 	}
 	ul{float:left;background-color: #e6e6e6;border: 1px solid #e6e6e6;
 		margin:10px;padding:0 16px;
+		height: 142px;
 		border-radius:5px!important;-webkit-border-radius:5px!important;-moz-border-radius:5px!important;}
 	li{width:300px;margin-bottom: 3px;list-style: none;}
 	.headLi{font-size:16px;font-weight: 700;}
@@ -62,6 +63,7 @@ var oImage = new Image();oImage.src = "loading.gif";
 		overflow: hidden;
 		white-space: nowrap;
 		float: left;
+		text-overflow:ellipsis;
 	}
 	#intor{width: 100%;text-align: center;font-size: 12px;font-weight: 700;}
 	#reLoad{cursor:pointer;}
@@ -79,30 +81,48 @@ var oImage = new Image();oImage.src = "loading.gif";
 	<div id="myblog" class="box clearfix">
 		<h1><a href="http://www.zouyang1230.com" target="_self">回到首页</a> | <span id="reLoad">刷新RSS缓存</span></h1>
 		<ul>
-	      <li><a href="https://www.ecma-international.org/">ecma国际</a></li>
+	      <li><a href="https://www.ecma-international.org/">ECMA国际</a></li>
 	      <li><a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm">2017ECMA标准</a></li>
-	      <li><a href="https://developers.google.com/web/">谷歌web开发者</a></li>
-	      <li><a href="http://efe.baidu.com/">百度EYE</a></li>
-	      <li><a href="https://css-tricks.com/">css-tricks</a></li>
-	      <li><a href="https://nodejs.org/en/blog/">Nodejs news</a></li>
-	      <li><a href="https://medium.com/">medium</a></li>
+		  <li><a href="https://www.w3.org/TR/#tr_DOM">W3C DOM</a></li>
+		  <li><a href="https://developers.google.com/web/">谷歌web开发者</a></li>
+	      <li><a href="https://nodejs.org/en/blog/">Nodejs News</a></li>
+		  <li><a href="https://reactjs.org/blog/2017/09/26/react-v16.0.html">React News</a></li>
+		  <li><a href="http://facebook.github.io/react-native/blog/">RN News</a></li>
 	    </ul>
 	</div>
 	<div id="front" class="box clearfix">
 		<h1>Front-end</h1>
 	</div>
 	<div id="end" class="box clearfix">
-		<h1>PHP and Nodejs</h1>
+		<h1>PHP,Nodejs ...</h1>
+		<ul>
+			<li><a href="http://www.php.cn/">php.cn</a></li>
+			<li><a href="http://php.net/manual/zh/manual.php">php.net</a></li>
+			<li><a href="http://document.thinkphp.cn/manual_3_2.html">ThinkPHP3.2</a></li>
+			<li><a href="http://www.thinkphp.cn/">thinkphp</a></li>
+			<li><a href="https://laravel-china.org/">laravel-china</a></li>
+			<li><a href="https://cnodejs.org/">cnodejs</a></li>
+			<li><a href=""></a></li>
+		</ul>
 	</div>
 	<div id="database" class="box clearfix">
-		<h1>Database</h1>
+		<h1>Database ...</h1>
+		<ul>
+			<li><a href="https://www.mongodb.com/">mongodb</a></li>
+			<li><a href="http://sqlite.org/">sqlite</a></li>
+			<li><a href="https://www.centos.org/">centos</a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
 	</div>
 	<div id="other" class="box clearfix">
-		<h1>Other</h1>
+		<h1>Other,android,C/C++...</h1>
 	</div>
 
   <div id="statics" class="box clearfix">
-    <h1>临时备注：</h1>
+    <h1>暂存1：</h1>
     <ul>
       <li><a href="https://www.ted.com/">Ted</a></li>
       <li><a href="https://www.nasa.gov/">NASA</a></li>
@@ -114,7 +134,7 @@ var oImage = new Image();oImage.src = "loading.gif";
     </ul>
 
     <ul>
-      <li><a href="http://tool.lu/">在线工具箱</a></li>
+      <li><a href="http://caniuse.com/">caniuse</a></li>
       <li><a href="http://www.iconfont.cn/">阿里巴巴矢量图库</a></li>
       <li><a href="https://msdn.microsoft.com/library">MSDN</a></li>
       <li><a href="https://developer.mozilla.org/zh-CN/">MDN</a></li>
@@ -131,13 +151,23 @@ var oImage = new Image();oImage.src = "loading.gif";
       <li><a href="https://about.gitlab.com/">gitlab</a></li>
       <li><a href="https://www.gitbook.com/">gitbook</a></li>
       <li><a href="http://www.itellyou.cn/">itellyou</a></li>
-    </ul>
+	</ul>
+	
+	<ul>
+		<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API">Web API 接口</a></li>
+		<li><a href="https://medium.com/">medium</a></li>
+		<li><a href="http://efe.baidu.com/">百度EFE</a></li>
+		<li><a href="https://www.linux.org/">linux</a></li>
+		<li><a href="https://www.digitalocean.com">digitalocean</a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	  </ul>
 
 
   </div>
 
   <div id="en" class="box clearfix">
-	<h1>部分英文</h1>
+	<h1>暂存2：</h1>
   </div>
 
 	<div id="footer">
